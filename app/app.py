@@ -181,10 +181,10 @@ except ImportError:
 @st.cache_resource
 def load_models():
     try:
-        preprocessor = joblib.load('cb_preprocessor.pkl')
+        preprocessor = joblib.load('models/cb_preprocessor.pkl')
         model = CatBoostClassifier()
-        model.load_model('catboost_model.cbm')
-        calibrator=joblib.load('isotonic_calibrator.pkl')
+        model.load_model('models/catboost_model.cbm')
+        calibrator=joblib.load('models/isotonic_calibrator.pkl')
         return preprocessor, model,calibrator
     except FileNotFoundError:
         st.error("Файлы модели не найдены. Поместите .pkl и .cbm в папку с приложением.")
