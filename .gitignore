@@ -1,0 +1,10 @@
+*.cbm
+*.pkl
+
+app/.streamlit/secrets.toml
+
+__pycache__/
+.DS_Store
+.ipynb_checkpoints/
+venv/
+env/
