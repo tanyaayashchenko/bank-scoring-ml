@@ -34,9 +34,9 @@ class CatBoostPreprocessor(BaseEstimator, TransformerMixin):
         return X
  
 def get_favicon_base64():
-    if os.path.exists("2.png"):
+    if os.path.exists("images/2.png"):
         try:
-            img = Image.open("2.png")
+            img = Image.open("images/2.png")
             # Уменьшаем для favicon (обычно 32x32 или 64x64)
             img = img.resize((64, 64), Image.LANCZOS)
             buffered = BytesIO()
@@ -254,7 +254,7 @@ def generate_call_script(client_data, probability):
  
 def get_icon_html(icon_name, is_active=False):
     
-    icon_file = f"{icon_name}.png"
+    icon_file = f"images/{icon_name}.png"
     if os.path.exists(icon_file):
         try:
             img = Image.open(icon_file)
