@@ -42,6 +42,11 @@
 
 ![Генерация скрипта GigaChat](https://github.com/tanyaayashchenko/bank-scoring-ml/blob/ea83c85946c17ede6d704acbaa73c5eaa2fe41be/app/images/streamlit_gigachat.jpg)
 
+Настройка API-ключа GigaChat:
+* Перейдите в папку 'app/.streamlit'
+* Переименуйте файл 'secrets.example.toml' в 'secrets.toml'
+* Откройте его и вставьте ваш API-ключ вместо "ваш_ключ_здесь" либо воспользуйтесь моим ключом: скачать файл с ключом можно по ссылке https://disk.yandex.ru/d/X8l1WXaQQNU8Pg
+  
 **Финансовая модель и экономический эффект:**
 * Объем базы клиентов 100 000 человек
 * Пропускная способность колл-центра 30 000 звонков в месяц
