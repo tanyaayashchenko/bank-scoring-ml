@@ -33,7 +33,7 @@
 
 Таким образом, на вход системе подаются признаки клиента, модель CatBoost предсказывает вероятность согласия, которая калибруется для перехода к бизнес-индикаторам (цветовая маркировка потенциала). При высоком потенциале система обращается к GigaChat, который генерирует персонализированный скрипт.
 
-Подготовка [данных](https://github.com/tanyaayashchenko/bank-scoring-ml/blob/61f981bc3d289bec1f040f0332934c6a0735ede0/data/cleaned_dataset.csv), EDA, обучение моделей, анализ ошибок и бизнес-интерпретация результатов представлены в ноутбуке [01_model_development.ipynb](https://github.com/tanyaayashchenko/bank-scoring-ml/blob/0b985dd7051779850644ea8289e81850ebcaed62/notebooks/01_model_development.ipynb).
+Подготовка [данных](https://github.com/tanyaayashchenko/bank-scoring-ml/blob/61f981bc3d289bec1f040f0332934c6a0735ede0/data/cleaned_dataset.csv), EDA, обучение моделей, анализ ошибок и бизнес-интерпретация результатов представлены в ноутбуке [01_model_development.ipynb](https://github.com/tanyaayashchenko/bank-scoring-ml/blob/0b985dd7051779850644ea8289e81850ebcaed62/notebooks/01_model_development.ipynb). Артефакты моделей находятся в папке [models](https://github.com/tanyaayashchenko/bank-scoring-ml/tree/c8b4ac230b613c141c7bf767e6b597369f634d69/app/models).
 
 Интерфейс OCRM с функцией скоринга клиента и ИИ-ассистентом реализованы в приложении [app.py](https://github.com/tanyaayashchenko/bank-scoring-ml/blob/0b985dd7051779850644ea8289e81850ebcaed62/app/app.py):
 
